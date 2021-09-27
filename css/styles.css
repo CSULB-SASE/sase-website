@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 /*!
 * Start Bootstrap - Grayscale v7.0.3 (https://startbootstrap.com/theme/grayscale)
 * Copyright 2013-2021 Start Bootstrap
@@ -3026,16 +3027,29 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
-.btn-primary {
+.btn-primary-arrow{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  padding: 30%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  opacity: 30%;
+  text-align: center;
+  white-space: nowrap;
 }
-.btn-primary:hover {
-  color: #fff;
-  background-color: #558985;
-  border-color: #50817e;
+.btn-primary-arrow:hover {
+    opacity: 10%;
 }
+.btn-primary-font {
+  padding: 10%;
+}
+.btn-primary-font:hover {
+  opacity: 10%;
+}
+
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
   background-color: #558985;
@@ -11549,25 +11563,30 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/lb2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
+  /* font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  font-family: 'Montserrat', sans-serif;
+  /* font-weight: lighter; */
+  font-size: 1.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.4));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
 }
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
+  opacity: 100%;
   font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
