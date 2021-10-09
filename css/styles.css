@@ -697,8 +697,9 @@ progress {
   margin-top: var(--bs-gutter-y);
 }
 
-.col {
+.col !important{
   flex: 1 0 0%;
+  padding-bottom: 10%;
 }
 
 .row-cols-auto > * {
@@ -11490,10 +11491,10 @@ body {
   background-color: #fff;
 }
 #mainNav .navbar-toggler {
-  font-size: 80%;
+  font-size: 90%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #000;
+  border: 1px solid #000;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11547,15 +11548,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #106cb5;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #106cb5;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #106cb5;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #106cb5;
   }
 }
 
@@ -11624,27 +11625,46 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 8rem;
   background: linear-gradient(to bottom, #fff 20%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.8) 90%);
 }
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding-top: 5rem;
 }
+
+.header {
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    opacity: 0.5;
+    width: 100%;
+    padding-bottom: 13%;
+}
+
+.border-text-left{
+  border-left: 0.5rem solid #106cb5;
+}
+
+.border-text-right{
+  border-right: 0.5rem solid #106cb5;
+  padding-left: 10rem;
+}
+
 .projects-section .featured-text {
-  padding: 2rem;
+  padding: 10rem;
 }
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    /* border-left: 0.5rem solid #106cb5; */
   }
 }
 .projects-section .project-text {
-  padding: 3rem;
+  padding: 10rem;
   font-size: 90%;
 }
 @media (min-width: 992px) {
@@ -11652,7 +11672,7 @@ body {
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #106cb5;
     border-width: 0.25rem;
     width: 30%;
   }
