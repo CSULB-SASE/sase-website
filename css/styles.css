@@ -122,7 +122,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 18px !important;
+  font-size: 18px;
   line-height: 120%;
   letter-spacing: 13px;
   opacity: 100%;
@@ -11640,6 +11640,17 @@ body {
 
 /* Officers Section */
 
+.fill {object-fit: fill;}
+.contain {object-fit: contain;}
+.cover {object-fit: cover;}
+.scale-down {object-fit: scale-down;}
+.none {object-fit: none;}
+
+.officer-section {
+  padding-top: 5%;
+  /* padding-bottom: 5%; */
+}
+
 .grid {
     display: block;
     margin: 0 auto;
@@ -11667,6 +11678,7 @@ body {
     display: block;
     opacity: 0.8;
     height: 240px;
+
 
     @media(max-width: 1260px) {
         height: 240px;
@@ -11718,11 +11730,13 @@ body {
 
 .grid figure h2 span {
     font-weight: 800;
+    font-size: 17px;
 }
 
 figure.effect {
     z-index: auto;
     background: #000;
+    margin: 10px;
 }
 
 figure.effect:before {
@@ -11765,6 +11779,153 @@ figure.effect img {
     height: 310px;
 }
 
+figure.effect h2 {
+    /*  background: #9779d3;
+*/
+    background: #106cb5;
+    color: white;
+    opacity: 80%;
+    padding: 10px
+}
+
+figure.effect p {
+    /*background: black;*/
+    color: white;
+    line-height: 1;
+    word-spacing: normal;
+}
+
+/*added ".overlay:active
+:hover does not work on mobile
+*/
+
+figure.effect .overlay:hover{
+    background: black;
+    height: 240px;
+    opacity: .25;
+}
+
+figure.effect .overlay:active {
+    background: black;
+    height: 240px;
+    opacity: 0;
+}
+
+figure.effect h3 {
+    color: white;
+}
+
+figure.effect h2 {
+    position: absolute;
+    padding: 0.25em;
+    bottom: 5px;
+    width: 100%;
+}
+
+figure.effect p,
+figure.effect h3 {
+    margin-top: 1em;
+    padding: 0.3em;
+    font-weight: 800;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+figure.effect:hover:before{
+    opacity: 1;
+}
+
+figure.effect:active:before{
+    opacity: 1;
+}
+
+figure.effect:hover img {
+    -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
+    transform: perspective(1000px) translate3d(0, 0, 21px);
+}
+
+figure.effect:active img {
+    -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
+    transform: perspective(1000px) translate3d(0, 0, 21px);
+}
+
+figure.effect:hover h2:before, :active h2:before {
+    opacity: 0;
+}
+
+figure.effect:hover p {
+    opacity: 1;
+}
+figure.effect:active p {
+    opacity: 1;
+}
+
+figure.effect:hover h3, .effect:active h3 {
+    opacity: 1;
+}
+
+.grid figure,
+figcaption,
+img {
+    z-index: 0;
+}
+
+.grid figure figcaption h2 {
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: normal;
+    margin-bottom: -.5em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.grid figcaption p {
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.grid figcaption h3 {
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: -2.2em;
+    height: 30%;
+}
+
+.grid figcaption h3.major-year {
+    font-size: 14px;
+    display: inline-block;
+    text-align: right;
+    padding: 0;
+    padding-right: 5px;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: -1em;
+}
+
+figure:hover h2, figure:active h2{
+    background: #106cb5;
+    opacity: 80%;
+    transition: transform 0.7s;
+    /*transform: translateY(-2.5em);*/
+    transform: translateY(-20.5em);
+}
+
+.grid figcaption a:hover, figcaption a:active {
+    color: #106cb5;
+    opacity: 80%;
+    border-bottom-color: transparent;
+}
 
 /* Officers Section End */
 
@@ -11779,7 +11940,7 @@ figure.effect img {
     text-align: center;
     opacity: 0.5;
     width: 100%;
-    padding-bottom: 13%;
+    padding-bottom: 8%;
 }
 
 .join-section {
