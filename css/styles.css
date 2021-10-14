@@ -11780,8 +11780,6 @@ figure.effect img {
 }
 
 figure.effect h2 {
-    /*  background: #9779d3;
-*/
     background: #106cb5;
     color: white;
     opacity: 80%;
@@ -11793,22 +11791,6 @@ figure.effect p {
     color: white;
     line-height: 1;
     word-spacing: normal;
-}
-
-/*added ".overlay:active
-:hover does not work on mobile
-*/
-
-figure.effect .overlay:hover{
-    background: black;
-    height: 240px;
-    opacity: .25;
-}
-
-figure.effect .overlay:active {
-    background: black;
-    height: 240px;
-    opacity: 0;
 }
 
 figure.effect h3 {
@@ -11844,7 +11826,7 @@ figure.effect:hover img {
     -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
     transform: perspective(1000px) translate3d(0, 0, 21px);
     filter: blur(1px);
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 figure.effect:active img {
@@ -11853,7 +11835,7 @@ figure.effect:active img {
 }
 
 figure.effect:hover h2:before, :active h2:before {
-    opacity: 0;
+    opacity: 1;
 }
 
 figure.effect:hover p {
@@ -11884,13 +11866,14 @@ img {
 
 
 .grid figcaption p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
-    position: absolute;
-    text-align: left;
-    bottom: 0;
-    margin: 0;
+    text-align: center;
+    background-position: center;
+    padding: 10px;
+    margin-right: -180px;
     height: 100%;
+    width: 100%;
 }
 
 .grid figcaption h3 {
@@ -11909,9 +11892,7 @@ img {
     weight: strong;
     display: inline-block;
     text-align: right;
-    padding: 1;
-    bottom: 0;
-    margin: 0;
+    margin-bottom: -30px;
 }
 
 figure:hover h2, figure:active h2{
