@@ -11892,7 +11892,7 @@ img {
     weight: strong;
     display: inline-block;
     text-align: right;
-    margin-bottom: -30px;
+    margin-bottom: -10px;
 }
 
 figure:hover h2, figure:active h2{
